@@ -1,0 +1,32 @@
+# Flutter/Dart generated files
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+
+# IDE
+**/.idea/
+**/*.iml
+**/.vscode/
+
+# Build outputs
+**/build/
+**/*.apk
+**/*.aab
+**/*.dex
+**/*.so
+
+# Android
+**/.gradle/
+**/.kotlin/
+**/local.properties
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+
+# Logs
+**/*.log

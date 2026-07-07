@@ -1,0 +1,48 @@
+buildscript {
+<<<<<<< HEAD
+    ext.kotlin_version = '2.3.20'
+=======
+    ext.kotlin_version = '1.9.22'
+>>>>>>> 4dd908a849b3b51b9738ab984e1088d324c50337
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+<<<<<<< HEAD
+subprojects { sub ->
+    if (sub.name != 'app') {
+        sub.afterEvaluate {
+            if (it.hasProperty('android')) {
+                it.android {
+                    compileSdkVersion 35
+                }
+            }
+        }
+    }
+}
+=======
+>>>>>>> 4dd908a849b3b51b9738ab984e1088d324c50337
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
